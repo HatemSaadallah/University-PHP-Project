@@ -6,14 +6,14 @@ namespace App\Enums;
 
 
     class PersonalInformation {
-        const name = "Hatem Raafat Saadallah";
-        const gender = "Male";
-        const birth_date = "1 July 2000";
-        const nationality = "Palestinian";
-        const place_of_birth = "Gaza";
-        const job_title = "Software Engineer";
-        const years_of_experience ="3 years";
-        const personalImageUrl = "https://via.placeholder.com/300x300";
+        const name = "full_name";
+        const gender = "gender";
+        const birth_date = "birth_date";
+        const nationality = "nationality";
+        const place_of_birth = "place_of_birth";
+        const job_title = "job_title";
+        const years_of_experience ="years_of_experience";
+        const personalImageUrl = "personal_image_url";
 
         public static function getConstants() {
             // Return array

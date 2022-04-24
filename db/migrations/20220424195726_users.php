@@ -9,16 +9,20 @@ final class Users extends AbstractMigration
     public function up(): void
     {
         $this->table('users')
-            ->addColumn('name', 'string', ['limit' => 255])
-            ->addColumn('email', 'string', ['limit' => 255])
-            ->addColumn('password', 'string', ['limit' => 255])
-            ->addColumn('created_at', 'datetime', ['default' => 'CURRENT_TIMESTAMP'])
+            ->addColumn('full_name', 'string', ['limit' => 255])
+            ->addColumn('gender', 'string', ['limit' => 255])
+            ->addColumn('birth_date', 'datetime')
+            ->addColumn('nationality', 'string', ['limit' => 255])
+            ->addColumn('place_of_birth', 'string', ['limit' => 255])
+            ->addColumn('job_title', 'datetime','string', ['limit' => 255])
+            ->addColumn('years_of_experience', 'integer')
+            ->addColumn('personal_image_url', 'string', ['limit' => 255])
             ->addColumn('updated_at', 'datetime', ['default' => 'CURRENT_TIMESTAMP'])
-            ->addIndex(['email'], ['unique' => true])
+            ->addColumn('created_at', 'datetime', ['default' => 'CURRENT_TIMESTAMP'])
             ->create();
     }
     public function down()
-    {
+    {   
         $this->dropTable('users');
     }
 }
