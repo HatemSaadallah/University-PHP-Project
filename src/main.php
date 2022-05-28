@@ -1,6 +1,4 @@
-<?php
-    include("components/navbar.php");
-?>
+
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,6 +9,6 @@
 </head>
 
 <?php 
-    include("src/views/Home.php");
+    include("src/views/home.php");
     
 ?>

@@ -6,6 +6,8 @@
     },
     "require": {
         "robmorgan/phinx": "^0.12.10",
-        "symfony/yaml": "^6.0"
+        "symfony/yaml": "^6.0",
+        "vlucas/phpdotenv": "^5.4",
+        "doctrine/migrations": "^3.5"
     }
 }

@@ -3,8 +3,6 @@
 // Create enum personal information
 namespace App\Enums;
 
-
-
     class PersonalInformation {
         const name = "full_name";
         const gender = "gender";
