@@ -1,0 +1,144 @@
+main .infos{
+    margin-top: 25px;
+}
+main .personal-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main .infos .infos-title{
+    font-size: 2.5rem;
+    margin-top: -20px;
+
+}
+main .image{
+   width: 35%;
+   margin-right: 70px;   
+}
+main .image img{
+    width: 350px;
+    height: 350px;
+    margin-right: 70px;
+}
+table{
+    margin-left: -25px;
+}
+
+table tr th {
+    color: #eee;
+}
+
+/* ********** end main styles *********** */
+
+         /* end home page  */
+
+
+
+
+           /* start view Experience page  */
+
+/* ********** start main styles *********** */      
+.viewExp h1{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.viewExp section.first h3{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.viewExp section.first h3 sub{
+    font-size: 0.8rem;
+    
+}
+.viewExp section.first h4{
+    margin-bottom: 25px;
+}
+.viewExp section.first p{
+    margin-bottom: 50px;
+
+}
+/* ********** end main styles *********** */ 
+
+         /* end view Experience page  */
+          
+         /* start Add course page  && Add experence page */
+
+/* ********** start main styles *********** */ 
+
+.AddCourses,.AddExp{
+   display: flex;
+   justify-content: space-around;
+   padding: 60px 0;
+   margin-bottom: 20px;
+   
+}
+
+.AddCourses .image,.AddExp .image{
+    height: 100%;
+}
+.AddCourses .course img {
+    height: 612px;
+    width: 120%;
+}
+
+.AddCourses form [type="submit"] ,.AddCourses form [type="reset"] , .AddExp form [type="submit"] ,.AddExp form [type="reset"]{ 
+    border: none;
+    display: inline-block;
+    width: 230px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+
+}
+.AddCourses form [type="submit"] ,.AddExp form [type="submit"]{
+    background-color: #198754;
+    margin-left: 30px;
+}
+.AddCourses form [type="reset"] ,.AddExp form [type="reset"]{
+    background-color: #dc3545 ;
+    margin-left: 75px;
+}
+
+.form-inputs{
+    border-radius: 8px;
+    height: 28px;
+    width: 230px;
+    border: 1px solid black;
+}
+textarea{
+    height: 100px !important;
+}
+.AddCourses .urlRadio{
+     margin-left: 65px;
+}
+
+/* ********** end main styles *********** */ 
+/*  end Add course page  */
+
+
+
+/* ********** start main styles *********** */ 
+/* start Add experience page  */
+.AddExp .exp{
+    margin-right: -120px;
+}
+.AddExp .exp img{
+    height: 460px;
+    width: 90%; 
+}
+
+.AddExp textarea{
+    width: 460px !important;
+}
+/* ********** end main styles *********** */ 
+/*  end Add experience page  */
+
+td {
+    width: 50%;
+}
+
+tr {
+    margin-top: 1em;
+}

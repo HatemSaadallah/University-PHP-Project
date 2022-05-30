@@ -5,6 +5,7 @@
   padding-top: 30px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
 }
 
 .container .title {
@@ -14,6 +15,33 @@
   margin-bottom: 30px;
 }
 
-table {
-  float: left;
+.personal-title {
+  font-family: "Trebuchet MS", Arial, Verdana !important;
+  margin-bottom: 3em;
+}
+
+.left-container {
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  
+  padding: 1em;
+}
+
+table td {
+  width: 50%;
+}
+
+.personal_image {
+  /* width: 3em; */
+}
+
+.row_name {
+  width: 60%;
+  padding-bottom: 2em;
+}
+
+.row_data {
+  font-weight: bold;
 }

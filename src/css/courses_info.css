@@ -1,0 +1,59 @@
+.courses-table-info {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.courses-table-info th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+tr {
+    height: 80px;
+}
+
+.courses-info {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+.head-row-courses-info {
+    background-color: #606060;
+    border-radius: 50%;
+}
+
+.head-row-courses-info {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.sub-head-row-courses-info {
+    width: 100%;
+
+    overflow: hidden;
+    margin: 0 auto !important;
+    padding: 0;
+    border: 0 !important;
+}
+
+.sub-head-row-courses-info th {
+    width: 50%;
+}
+
+.sub-head-row-courses-info tr {
+    height: 40px;
+}
+
+.odd_table_color {
+    background-color: #E5E5E5;
+}
+
+.centralized {
+    text-align: center;
+}
