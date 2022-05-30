@@ -1,15 +1,14 @@
 CREATE TABLE IF NOT EXISTS experience_info (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    job_title VARCHAR(255) NOT NULL,
-    place_of_training VARCHAR(255) NOT NULL,
-    experience_category VARCHAR(255) NOT NULL,
-    start_month DATE NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    category VARCHAR(255) NOT NULL,
+    start_date DATE NOT NULL,
     -- Add not less than constraint
-    end_month DATE NOT NULL 
-
+    end_date DATE,
+    institution VARCHAR(255) NOT NULL,
     description TEXT NOT NULL
 );
 
-INSERT INTO experience_info (job_title, place_of_training, experience_category, start_month, end_month, description)
+INSERT INTO experience_info (title, category, start_date, end_date, institution, description)
 
-VALUES ('Web Developer', 'Al Azhar University', 'Job', '2000-5-1', '2005-5-1', 'I have been working as a web developer for 3 years.');
+VALUES ('Web Developer', 'Job', '2015-5-1', '2020-5-1', 'Azhar University', 'Lorem Ipsum');

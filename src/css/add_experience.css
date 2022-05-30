@@ -1,3 +1,75 @@
-* {
-    color: red;
+@font-face {
+    font-family: ArRounded;
+    src: url(../../static/fonts/Arial_Rounded_MT.ttf);
+}
+@font-face {
+    font-family: ComicSans;
+    src: url(../../static/fonts/ComicSansMS3.ttf);
+}
+@font-face {
+    font-family: unispace;
+    src: url(../../static/fonts/unispace\ rg.ttf);
+}
+
+
+main {
+    display: flex;
+}
+
+.AddCourses,.AddExp{
+   display: flex;
+   justify-content: space-around;
+   margin-top: -35px;
+   padding: 60px 0;
+   margin-bottom: 20px;
+   
+}
+
+.AddCourses .image,.AddExp .image{
+    height: 100%;
+}
+
+
+.AddExp form [type="submit"] ,.AddExp form [type="reset"]{ 
+    border: none;
+    display: inline-block;
+    width: 230px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+
+}
+.AddExp form [type="submit"]{
+    background-color: #198754;
+    margin-left: 30px;
+    margin-top: 4em;
+}
+.AddExp form [type="reset"]{
+    background-color: #dc3545 ;
+    margin-left: 75px;
+    margin-top: 4em;
+}
+
+.form-inputs{
+    border-radius: 8px;
+    height: 28px;
+    width: 230px;
+    border: 1px solid black;
+}
+textarea{
+    height: 100px !important;
+}
+
+
+.AddExp textarea{
+    width: 460px !important;
+}
+
+tr {
+    height: 4em !important;
+}
+
+/* first element of tr */
+.AddExp tr:nth-child(1) td:nth-child(1){
+    width: 15em;
 }

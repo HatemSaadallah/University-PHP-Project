@@ -13,7 +13,6 @@ include("../components/navbar.php");
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $course_name = $_POST['course_name'];
     $total_hours = $_POST['total_hours'];
-    // Cast to int
     $total_hours = (int)$total_hours;
     $from_date = $_POST['from_date'];
     $to_date = $_POST['to_date'];
@@ -21,30 +20,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $attachment = $_POST['attachment'];
     $notes = $_POST['notes'];
 
-    if (isset($_FILES['image'])) {
-        $errors = array();
-        $file_name = $_FILES['image']['name'];
-        echo $file_name;
-        $file_size = $_FILES['image']['size'];
-        $file_tmp = $_FILES['image']['tmp_name'];
-        $file_type = $_FILES['image']['type'];
-        $file_ext = strtolower(end(explode('.', $file_name)));
-
-        $extensions = array("jpeg", "jpg", "png");
-
-        // if (in_array($file_ext, $extensions) === false) {
-        //     $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
-        // }
-
-        // if ($file_size > 2097152) {
-        //     $errors[] = 'File size must be less than 2 MB';
-        // }
-
-        if (empty($errors) == true) {
-            move_uploaded_file($file_tmp, "../images/" . $file_name);
-            echo "Success";
+    $attachment_or_url = $_POST['attachment_or_url'];
+    
+    if($attachment_or_url == "file") {
+        if (isset($_FILES['image'])) {
+            $errors = array();
+            $file_name = $_FILES['image']['name'];
+            $file_size = $_FILES['image']['size'];
+            $file_tmp = $_FILES['image']['tmp_name'];
+            $file_type = $_FILES['image']['type'];
+            $tmp = explode('.', $file_name);
+            $file_ext = strtolower(end($tmp));
+    
+            $extensions = array("jpeg", "jpg", "png");
+    
+            if (in_array($file_ext, $extensions) === false) {
+                $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+            }
+    
+            if ($file_size > 2097152) {
+                $errors[] = 'File size must be less than 2 MB';
+            }
+    
+            if (empty($errors) == true) {
+                move_uploaded_file($file_tmp, "../../static/uploads/1.png");
+                echo "Success";
+            } else {
+                for($i=0; $i<count($errors); $i++) {
+                    echo $errors[$i]."<br>";
+                }
+            }
         } else {
-            print_r($errors);
+            echo "No file selected";
         }
     }
 
@@ -141,8 +148,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             Attachment:
                         </td>
                         <td>
-                            <input type="radio" name="attach">File
-                            <input type="radio" name="attach" class="urlRadio">URL
+                            <input type="radio" value="file" name="attachment_or_url">File
+                            <input type="radio" value="url" name="attachment_or_url" class="urlRadio">URL
                         </td>
                     </tr>
                     <tr style="height: 1em;">

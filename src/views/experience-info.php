@@ -19,12 +19,12 @@ include("../components/navbar.php");
 
     foreach ($experiences as $experience) {
         echo "<div class='experience-info-container'>";
-            echo "<span class='job_title'>" . $experience['job_title'] . "</span>";
-            echo "<span class='place_of_training'>" . $experience['place_of_training'] . "</span>";
+            echo "<span class='job_title'>" . $experience['title'] . "</span>";
+            echo "<span class='place_of_training'>" . $experience['institution'] . "</span>";
             echo ' / ';
-            echo "<span class='experience_category' >" . $experience['experience_category'] . "</span>";
+            echo "<span class='experience_category' >" . $experience['category'] . "</span>";
             echo "<br />";
-            echo "<span class='date'>from " . $experience['start_month'] . " to " . $experience['end_month'] . "</span>";
+            echo "<span class='date'>from " . $experience['start_date'] . " to " . $experience['end_date'] . "</span>";
 
             echo "<p class='description' >" . $experience['description'] . "</p>";
         echo "</div>";
