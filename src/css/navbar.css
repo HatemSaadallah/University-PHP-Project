@@ -1,7 +1,7 @@
 
 
 .nav-item {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
     color: black;
 }
 

@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <label for="note">Description:</label>
                         </td>
                         <td>
-                            <textarea id="description" name="description" class="form-inputs" required ></textarea>
+                            <textarea id="description" name="description" class="form-inputs" ></textarea>
                         </td>
                     </tr>
                 </table>

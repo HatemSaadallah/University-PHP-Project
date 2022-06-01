@@ -57,3 +57,13 @@ tr {
 .centralized {
     text-align: center;
 }
+
+#courseId {
+    color: blue;
+}
+
+#courseId:hover {
+    color: red;
+    /* make underscored */
+    text-decoration: underline;
+}

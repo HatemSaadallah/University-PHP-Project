@@ -1,3 +1,17 @@
+/* Import font */
+@font-face {
+    font-family: Tahoma;
+    src: url(../../static/fonts/103-Tahoma.ttf);
+}
+
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url(../../static/fonts/trebuc.woff);
+}
+
+.experience-container {
+    font-family: Tahoma, Geneva, sans-serif;
+}
 .experience-container {
     width: 90%;
     margin: 0 auto;
@@ -6,6 +20,8 @@
 .experience-title {
     margin-top: 0.4em;
     margin-bottom: 1em !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .experience-info-container {
